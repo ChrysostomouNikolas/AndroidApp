@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.n2_chrysostomo.moviedb">
+
+    <uses-permission android:name="android.permission.INTERNET" />  <!--allows Internet connection-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchResultsActivity"></activity><!-- used for for movie search-->
+        <avtivity android:name=".SearchResultsActivity2"></avtivity><!-- used for dactor search-->
+        <activity android:name=".DrawGraph"></activity>           <!-- used for drawing graph-->
+        <activity android:name=".SearchHistory"></activity>     <!-- used for showing search history-->
+
+
+
+
+
+
+
+    </application>
+
+</manifest>
+
+
+
+<!--
+
+uses permission allows the application to use different features such as Camera and the internet
+icon  represents the icon that the application will be having when visible to the user
+label represents the name that the application will be having below the icon(aka name of App)
+theme is the style of the application
+
+sicne we re using twon new activities we must declare them in the manifest file
+so that the application will be aware of the multiple activities being used
+services and activities should be stated on the program
+-->
